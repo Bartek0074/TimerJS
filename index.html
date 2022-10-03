@@ -4,9 +4,51 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/44f399a034.js" crossorigin="anonymous"></script>
     <title>TimerJS</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <div class="wrapper">
+        <p class="info">
+            <i class="fas fa-brush"></i>
+            <i class="fas fa-question"></i>
+        </p>
+
+        <div class="colors">
+            <div class="color one"></div>
+            <div class="color two"></div>
+            <div class="color three"></div>
+        </div>
+
+        <h1>Timer</h1>
+        <p class="stopwatch">0:00</p>
+        <p class="time">0:00</p>
+
+        <div class="buttons">
+            <button class="start"><i class="fa fa-play"></i></button>
+            <button class="pause"><i class="fa fa-pause"></i></button>
+            <button class="stop"><i class="fa fa-stop"></i></button>
+            <button class="reset"><i class="fa fa-times"></i></button>
+            <button class="history">History</button>
+        </div>
+
+        <ul class="time-list"></ul>
+    </div>
+
+    <div class="modal-shadow">
+        <div class="modal">
+            <h3>Guide:</h3>
+            <p><i class="fa fa-play"></i> - start</p>
+            <p><i class="fa fa-pause"></i> - pause</p>
+            <p><i class="fa fa-stop"></i> - stop</p>
+            <p><i class="fa fa-times"></i> - delete all records</p>
+            <p><strong>HISTORY</strong> - show previous records</p>
+
+            <button class="close">Close</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
